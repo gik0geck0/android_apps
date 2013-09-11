@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/score_screen" >
+
+    <TextView
+        android:id="@+id/game_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="January 1, 1980 00:00"
+        android:textSize="20dp" />
+
+    <!-- Stretch feature
+    <TextView
+        android:id="@+id/game_timer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="0:00:00" />
+    -->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/team_labels" >
+
+        <TextView 
+            android:id="@+id/a_team"
+            android:text="Team A"
+            android:textSize="40dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5" />
+
+        <TextView 
+            android:id="@+id/b_team"
+            android:text="Team B"
+            android:textSize="40dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/live_scores" >
+
+        <TextView 
+            android:id="@+id/a_score"
+            android:text="0"
+            android:textSize="80dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5" />
+
+        <TextView 
+            android:id="@+id/b_score"
+            android:text="0"
+            android:textSize="80dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_tens" >
+
+        <Button
+            android:id="@+id/a_quaffle"
+            android:text="10 points"
+            android:textSize="40dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            />
+
+        <Button
+            android:id="@+id/b_quaffle"
+            android:text="10 points"
+            android:textSize="40dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_snitch" >
+
+        <Button
+            android:id="@+id/a_snitch"
+            android:text="Snitch"
+            android:textSize="40dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            />
+
+        <Button
+            android:id="@+id/b_snitch"
+            android:text="Snitch"
+            android:textSize="40dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            />
+    </LinearLayout>
+
+    <!--
+    <Button
+        android:id="@+id/pause_timer"
+        android:text="Pause Timer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <Button
+        android:id="@+id/resume_timer"
+        android:text="Resume Timer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+    -->
+</LinearLayout>
+

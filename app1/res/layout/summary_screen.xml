@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/mainlayout" >
+
+    <TextView
+        android:id="@+id/game_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="January 1, 1980 00:00"
+        android:textSize="20dp" />
+
+    <!--
+    <TextView
+        android:id="@+id/game_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0:00:00"
+        android:textSize="40dp" />
+    -->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/team_labels" >
+
+        <TextView 
+            android:id="@+id/a_team"
+            android:text="Team A"
+            android:textSize="40dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5" />
+
+        <TextView 
+            android:id="@+id/b_team"
+            android:text="Team B"
+            android:textSize="40dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scores" >
+
+        <TextView 
+            android:id="@+id/a_score"
+            android:text="0"
+            android:textSize="80dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5" />
+
+        <TextView 
+            android:id="@+id/b_score"
+            android:text="0"
+            android:textSize="80dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/has_snitch" >
+
+        <TextView
+            android:id="@+id/a_snitch"
+            android:text="Caught the Snitch!"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/b_snitch"
+            android:text="Caught the Snitch!"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/winner" >
+
+        <TextView
+            android:id="@+id/a_winner"
+            android:text="Winner!"
+            android:textSize="40dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/b_winner"
+            android:text="Winner!"
+            android:textSize="40dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+

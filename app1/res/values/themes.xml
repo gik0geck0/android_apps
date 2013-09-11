@@ -1,0 +1,4 @@
+<resources>
+    <style name="quidditch_theme" parent="@android:style/Theme.Holo" >
+    </style>
+</resources>
