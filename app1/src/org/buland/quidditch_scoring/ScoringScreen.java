@@ -62,7 +62,7 @@ public class ScoringScreen extends Activity implements View.OnClickListener {
         Intent startIntent = getIntent();
         this.gameId = startIntent.getIntExtra("GAMEID", -1);
 
-        // Get the database, and find the Date the game was created (this is sort-of a unique identifier for the game)
+        // Get the database, and find the Date the game was created (this is a unique identifier for the game)
         this.statsDb = (new StatisticsDBHelper(this)).getWritableDatabase();
         Date gameDate = new Date(StatisticsDBHelper.getGameDate(this.statsDb, this.gameId));
         gameDateView.setText(this.date_formatter.format(gameDate));
